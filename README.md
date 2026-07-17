@@ -1,22 +1,22 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,25:2196F3,50:0D47A1,75:FF2D55,100:D4AF37&height=260&section=header&text=AIR%20HOCKEY&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Neon%20Arcade%20Air%20Hockey%20Built%20with%20Canvas%202D&descAlignY=58&descSize=18"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,25:2196F3,50:0D47A1,75:FF2D55,100:D4AF37&height=260&section=header&text=AIR%20HOCKEY&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Neon%20Arcade%20Air%20Hockey%20%E2%80%94%20Next.js%20%2B%20TypeScript%20Edition&descAlignY=58&descSize=16"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=700&lines=Fast-Paced+Neon+Air+Hockey;Built+with+HTML5+Canvas+%26+JavaScript;Dynamic+Physics+%2B+Smart+CPU+AI;Slow-Motion+Game+Point+Moments;Confetti+%2B+Particle+Effects+%2B+Sound+Design" />
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=22&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=750&lines=Fast-Paced+Neon+Air+Hockey;Rebuilt+with+Next.js+14+%2B+TypeScript;Canvas+2D+Rendering+Engine;Dynamic+Physics+%2B+Smart+CPU+AI;Slow-Motion+Game+Point+Moments" />
 
 <br/>
 
-[![Made with HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
-[![Made with CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
-[![Made with JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
+[![Next.js](https://img.shields.io/badge/Next.js%2014-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](#)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](#)
+[![React](https://img.shields.io/badge/React%2018-61DAFB?style=for-the-badge&logo=react&logoColor=black)](#)
 [![Canvas API](https://img.shields.io/badge/Canvas%202D-FF6B00?style=for-the-badge&logo=html5&logoColor=white)](#)
 [![Web Audio API](https://img.shields.io/badge/Web%20Audio%20API-4CAF50?style=for-the-badge&logo=soundcharts&logoColor=white)](#)
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](#license)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge)](#contributing)
 [![Maintained](https://img.shields.io/badge/Maintained-Yes-success?style=for-the-badge)](#)
-![Repo Size](https://img.shields.io/github/repo-size/YasirAwan4831/air-hockey?style=for-the-badge&color=00d4ff)
-![Last Commit](https://img.shields.io/github/last-commit/YasirAwan4831/air-hockey?style=for-the-badge&color=ff2d55)
+![Repo Size](https://img.shields.io/github/repo-size/YasirAwan4831/air-hockey-next?style=for-the-badge&color=00d4ff)
+![Last Commit](https://img.shields.io/github/last-commit/YasirAwan4831/air-hockey-next?style=for-the-badge&color=ff2d55)
 
 <br/>
 
@@ -29,11 +29,13 @@
 ## 📖 Table of Contents
 
 - [About The Project](#-about-the-project)
+- [Why Next.js + TypeScript](#-why-nextjs--typescript)
 - [Preview](#-preview)
 - [Key Features](#-key-features)
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
 - [Getting Started](#-getting-started)
+- [Available Scripts](#-available-scripts)
 - [How To Play](#-how-to-play)
 - [Game Mechanics](#-game-mechanics)
 - [Roadmap](#-roadmap)
@@ -47,13 +49,27 @@
 
 <img align="right" src="https://capsule-render.vercel.app/api?type=cylinder&color=00D4FF&height=110&section=header&width=280&animation=twinkling"/>
 
-**Air Hockey** is a fast-paced, neon-themed arcade game built entirely from scratch using **HTML5 Canvas** and vanilla **JavaScript** — no external game engine, no game frameworks, no game asset libraries. Every visual effect, sound, particle, and physics interaction is hand-coded.
+**Air Hockey** is a fast-paced, neon-themed arcade game rendered entirely on **HTML5 Canvas**, now rebuilt on a modern **Next.js 14 (App Router) + TypeScript** foundation. What began as a single self-contained HTML prototype has been restructured into a fully typed, component-driven, production-ready project.
 
-The game recreates the feel of a real arcade air hockey table: a glowing puck slides across a frictionless surface, mallets strike with real momentum, and the CPU opponent reacts intelligently — with just enough imperfection to keep matches fair and fun.
+Every visual effect, sound, particle, and physics interaction is still hand-coded — no game engine, no game asset libraries — but the codebase is now organized into typed modules: a reusable audio engine, shared math/color utilities, centralized game constants, and a single strongly-typed React client component driving the Canvas render loop.
 
-> Built as a showcase of custom **2D physics**, **procedural audio synthesis**, **particle systems**, and **cinematic UI effects** — all without a single external game library.
+> A showcase of custom **2D physics**, **procedural audio synthesis**, **particle systems**, and **cinematic UI effects** — engineered with **type-safe, component-based architecture**.
 
 <br clear="right"/>
+
+---
+
+## ⚡ Why Next.js + TypeScript
+
+| Before (v1) | Now (v2) |
+|---|---|
+| Single monolithic `index.html` | Modular Next.js App Router project |
+| Plain JavaScript, no type safety | Fully typed with TypeScript interfaces |
+| Inline `<script>` / `<style>` | Separated components, lib modules & global CSS |
+| Manual DOM queries (`getElementById`) | React refs + a single client component |
+| No build tooling | Next.js dev server, production build & optimized output |
+
+The core game logic (physics, CPU AI, rendering, audio) is unchanged in behavior — only the architecture has evolved to be type-safe, maintainable, and ready for further framework-driven features (routing, difficulty settings pages, leaderboards, etc.).
 
 ---
 
@@ -71,7 +87,7 @@ The game recreates the feel of a real arcade air hockey table: a glowing puck sl
 |:---:|:---:|:---:|
 | Score · Streak · Top Speed · Power Hits | Glowing table, puck trail, particle bursts | Score · Streak · Top Speed · Power Hits |
 
-*(Add your own gameplay GIF or screenshot here — e.g. `docs/preview.gif`)*
+*(Add your own gameplay GIF or screenshot here — e.g. `public/preview.gif`)*
 
 </div>
 
@@ -126,63 +142,96 @@ The game recreates the feel of a real arcade air hockey table: a glowing puck sl
 
 <div align="center">
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Canvas API](https://img.shields.io/badge/Canvas%202D%20API-FF6B00?style=flat-square&logo=html5&logoColor=white)
 ![Web Audio API](https://img.shields.io/badge/Web%20Audio%20API-4CAF50?style=flat-square&logoColor=white)
-![Orbitron Font](https://img.shields.io/badge/Font-Orbitron-000000?style=flat-square&logo=googlefonts&logoColor=white)
-![Rajdhani Font](https://img.shields.io/badge/Font-Rajdhani-000000?style=flat-square&logo=googlefonts&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 
 </div>
 
 | Layer | Technology | Purpose |
 |---|---|---|
-| **Structure** | HTML5 | Semantic layout & canvas mounting |
-| **Styling** | CSS3 (Flexbox, Keyframes, clip-path) | Neon UI, responsive scaling, animations |
+| **Framework** | Next.js 14 (App Router) | Routing, build tooling, dev server |
+| **Language** | TypeScript | Type-safe game state, entities & engine |
+| **UI Layer** | React 18 (Client Component) | Canvas mount point, refs, DOM stat panels |
 | **Rendering** | Canvas 2D API | Puck, mallets, table, particles, effects |
-| **Logic** | Vanilla JavaScript (ES6+) | Physics engine, CPU AI, game state machine |
-| **Audio** | Web Audio API | Procedural sound synthesis (no audio files) |
+| **Physics & AI** | Custom TypeScript engine | Collision, momentum, CPU behavior |
+| **Audio** | Web Audio API (`AudioEngine` class) | Procedural sound synthesis (no audio files) |
+| **Styling** | Global CSS (Flexbox, Keyframes, clip-path) | Neon UI, responsive scaling, animations |
 | **Fonts** | Google Fonts (Orbitron, Rajdhani) | Arcade-style typography |
+| **Linting** | ESLint (`eslint-config-next`) | Code quality & consistency |
 
 ---
 
 ## 📁 Project Structure
 
 ```
-air-hockey/
-├── index.html          # Complete game — markup, styles & logic
-├── docs/
-│   └── preview.gif      # (optional) gameplay preview
-├── README.md            # Project documentation
-└── LICENSE               # MIT License
+air-hockey-next/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx        # Root layout, metadata & fonts
+│   │   ├── page.tsx          # Home page — mounts the game
+│   │   └── globals.css       # Global styles (neon theme, layout, animations)
+│   ├── components/
+│   │   └── AirHockeyGame.tsx # Client component — canvas mount + full game engine
+│   ├── lib/
+│   │   ├── audioEngine.ts    # Procedural Web Audio sound engine (typed class)
+│   │   ├── constants.ts      # Table, puck, mallet & CPU tuning constants
+│   │   └── utils.ts          # clamp / lighten / darken color helpers
+│   └── types/
+│       └── game.ts           # Shared TypeScript interfaces & types
+├── public/                    # Static assets (add preview.gif, favicon, etc.)
+├── next.config.mjs
+├── tsconfig.json
+├── package.json
+├── .eslintrc.json
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
-> Currently shipped as a **single self-contained HTML file** for simplicity and instant playability. A modular split (separate HTML / CSS / JS) and a React-based rewrite are planned — see [Roadmap](#-roadmap).
+> Physics, CPU AI, rendering and audio are typed and modularized under `src/lib` and `src/types`, while `AirHockeyGame.tsx` wires everything together inside a single `useEffect`-driven render loop for maximum Canvas performance.
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-Nothing but a modern web browser. No build tools, no dependencies, no npm install.
+
+- **Node.js** 18.17 or later
+- **npm**, **yarn**, or **pnpm**
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/YasirAwan4831/air-hockey.git
+git clone https://github.com/YasirAwan4831/air-hockey-next.git
 
 # Move into the project directory
-cd air-hockey
+cd air-hockey-next
 
-# Open directly in your browser
-open index.html      # macOS
-start index.html      # Windows
-xdg-open index.html   # Linux
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
 ```
 
-Or simply **double-click `index.html`** — the game runs entirely client-side.
+Open [http://localhost:3000](http://localhost:3000) in your browser to play.
+
+---
+
+## 📜 Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Starts the Next.js development server |
+| `npm run build` | Builds the app for production |
+| `npm run start` | Runs the production build |
+| `npm run lint` | Lints the codebase with ESLint |
 
 ---
 
@@ -226,12 +275,13 @@ Or simply **double-click `index.html`** — the game runs entirely client-side.
 </details>
 
 <details>
-<summary><strong>🔊 Procedural Audio</strong></summary>
+<summary><strong>🔊 Procedural Audio (typed <code>AudioEngine</code> class)</strong></summary>
 <br/>
 
 - All sound effects generated live via Web Audio oscillators & noise buffers
 - Distinct SFX for hits, wall bounces, goals, speed-ups, and victory
 - Zero external audio files — everything is synthesized in real time
+- Encapsulated in `src/lib/audioEngine.ts` as a reusable, typed class
 
 </details>
 
@@ -254,11 +304,11 @@ Or simply **double-click `index.html`** — the game runs entirely client-side.
 - [x] Procedural audio system
 - [x] CPU AI with adjustable difficulty
 - [x] Slow-motion & cinematic game-point effects
-- [ ] Split into modular HTML / CSS / JS files
-- [ ] Rebuild core UI in **React**
+- [x] Convert to **Next.js 14 + TypeScript** architecture
 - [ ] Add difficulty selection (Easy / Normal / Hard)
 - [ ] Add 2-player local multiplayer mode
-- [ ] Add persistent leaderboard / match history
+- [ ] Add persistent leaderboard / match history (API routes)
+- [ ] Add unit tests for physics & collision logic
 - [ ] Deploy live demo on Vercel
 
 See [open issues](#) for a full list of proposed features and known issues.
