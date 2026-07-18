@@ -20,7 +20,7 @@
 
 <br/>
 
-### 🕹️ [ Live Demo](#) &nbsp;·&nbsp; 🐛 [Report Bug](#) &nbsp;·&nbsp; 💡 [Request Feature](#)
+### 🕹️ [ Live Demo](https://yasir-air-hockey.vercel.app/) &nbsp;·&nbsp; 🐛 [Report Bug](https://github.com/YasirAwan4831/Air-Hockey-Arcade-Game) &nbsp;·&nbsp; 💡 [Request Feature](https://github.com/YasirAwan4831)
 
 </div>
 
@@ -87,7 +87,7 @@ The core game logic (physics, CPU AI, rendering, audio) is unchanged in behavior
 |:---:|:---:|:---:|
 | Score · Streak · Top Speed · Power Hits | Glowing table, puck trail, particle bursts | Score · Streak · Top Speed · Power Hits |
 
-*(Add your own gameplay GIF or screenshot here — e.g. `public/preview.gif`)*
+*(![alt text](image.png))*
 
 </div>
 
